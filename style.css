@@ -3,7 +3,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #6406BA;
+  background-color: #1E0270;
 }
 
 li {
@@ -37,15 +37,21 @@ body {
 }
 
 .first {
-  display: inline-block;
-  width:120px;
-  height:120px;
-  border: 1px solid red;
+  padding: 10px;
+  float : left;
 }
 
 .second {
-  display : inline-block;
-  height:160px;
-  width:160px;
-  border: 1px solid green;
+  padding: 10px;
+  float : left;
+}
+
+.third {
+  padding: 10px;
+  float : left;
+}
+
+.SpaceImg {
+  height: 20px;
+  width: 20px;
 }
