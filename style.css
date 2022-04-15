@@ -19,7 +19,8 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  /* background-color: #111; */
+   opacity: 0.5;
 }
 
 .active {
@@ -27,13 +28,17 @@ li a:hover:not(.active) {
 }
 body {
   font-family: arial;
+  margin : 0;
 }
 
-.body {
+.container {
   padding:10px;
-  padding-top : 20px;
+  /* padding-top : 20px; */
   /* text-align: center; */
   overflow: hidden;
+  margin:auto;
+ width: 75%;
+ padding: 10px;
 }
 
 .first {
@@ -44,6 +49,8 @@ body {
 .second {
   padding: 10px;
   float : left;
+  text-align: justify;
+
 }
 
 .third {
@@ -51,7 +58,53 @@ body {
   float : left;
 }
 
-.SpaceImg {
-  height: 20px;
-  width: 20px;
+/* img:hover {
+       box-shadow: 5px 4px 10px #8B0000;
+     } */
+
+.img-with-text {
+         text-align: justify;
+         /* width: ; */
+     }
+
+.second img {
+         display: block;
+         margin: 0 auto;
+     }
+
+.selfie {
+  float : left;
+  padding-top: 20px;
+  padding-left: 60px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #1E0270;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2C04A3;
+}
+
+.self {
+  width: 49%;
+}
+.back {
+  width: 2%;
 }
