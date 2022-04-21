@@ -5,14 +5,14 @@
 </head>
 <body>
 
-<ul>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="AboutMe.html">AboutMe</a></li>
-  <li><a class="active" href="index.html">Projecten</a></li>
-  <li style="float:left"><a href="index.html"><img class="logo" src="img/logo.png"></a></li>
+<ul id="navbar">
+  <li><a href="#Contact">Contact</a></li>
+  <li><a href="#AboutMe">AboutMe</a></li>
+  <li><a href="#Home">Projecten</a></li>
+  <li style="float:left"><a href="#Home"><img class="logo" src="img/logo.png"></a></li>
 </ul>
 
-<div class="container"> <!-- start of body -->
+<div class="container" id="Home"> <!-- start of body -->
 <h1>Portfolio</h1>
 <h2>Hier vind je mijn projecten die ik heb gemaakt tijdens mijn school periode en ook wat persoonlijke projecen</h2>
 
@@ -32,6 +32,50 @@
 <div class="third"> <!-- start of third -->
 <a href="Space.html"><img src="img/SpaceDestroyersBanner.png"></a>
 </div> <!-- end of third -->
+
+
+<div> <!-- start of about me -->
+<div class="container" id="AboutMe">
+  <img class="selfie" src="img/selfie.jpg">
+<h1>ABOUT ME</h1>
+Mijn naam is Kevin Assink en ik ben een fullstack developer.
+Ik doe de software development opleding op het mediacolege in Amsterdam.
+<br>
+Ik ben een enthousiaste developer die graag dingen leert en onderzoekt.
+<Br>
+Verder in mijn tijd werk ik aan eigen TowerDefence Game, maar ik game ook, ik speel vooral games zoals league of legends en Borderlands.
+<br>
+Maar ik hou mijn werk en vrij tijd wel uit elkaar dus op de werkvloer werk ik wel gewoon aan de opdracht die ik gekregen heb.
+</div> <!-- end of about me -->
+
+<div> <!-- start of contact -->
+
+  <div class="container" id="Contact">
+    <form action="action_page.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="netherlands">Netherlands</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+</div> <!-- end of contact -->
+
 </div> <!-- end of body -->
 
 </body>
